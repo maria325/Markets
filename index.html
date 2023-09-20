@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markets Shop</title>
+    <link rel="stylesheet" href="/public/style.css"  type="text/css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family:sans-serif;
+}
+/* top navbar */
+.top-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.top-navbar p{
+    margin-top: 13px;
+    margin-left: 15px;
+}
+.top-navbar .icons{
+    margin-top: 13px;
+    margin-right: 15px;
+}
+.top-navbar a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+.top-navbar a img{
+    margin-bottom: 3px;
+}
+.top-navbar a:hover{
+    color: black;
+}
+@media screen and (max-width:400px){
+    .top-navbar a{
+        font-size: 13px;
+    }
+    .top-navbar a img{
+        width: 15px;
+    }
+    .top-navbar p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:320px){
+    .top-navbar a{
+        font-size: 10px;
+    }
+    .top-navbar a img{
+        width: 13px;
+    }
+    .top-navbar p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:318px){
+    .top-navbar a{
+        font-size: 8px;
+        margin-left: 0;
+    }
+    .top-navbar a img{
+        width: 10px;
+        margin-left: 0;
+    }
+    .top-navbar p{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+/* top navbar */
+
+/* navbar */
+#navbar{
+    background-color: rgb(67 0 86);
+}
+#logo{
+    margin-left: 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+#logo span{
+    color: #ffc800;
+}
+#logo #span1{
+    font-size: 30px;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item{
+    margin-left: 10px;
+}
+.nav-item .nav-link{
+    color: white;
+    margin-left: 2px;
+    text-shadow: 0px 0px 1px black;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    color: #ffc800;
+}
+.dropdown-menu li a{
+    color: white;
+    transition: 0.5s ease;
+}
+.dropdown-menu li a:hover{
+    background-color: rgb(67 0 86);
+    color: #ffc800;
+}
+#search input{
+    border-radius: 50px;
+    border: none;
+}
+#search button{
+    border-radius: 50px;
+    color: white;
+    border: 1px solid #ffc800;
+    background-color: #ffc800;
+}
+/* navbar */
+
+
+
+
+/* home content */
+.home{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #a9a9a92b;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 300px;
+}
+.home .img img{
+    margin-top: 30px;
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-top: 20px;
+}
+.content h1{
+    color: rgb(67 0 86);
+    font-weight: bold;
+    margin-left: 23px;
+    font-size: 55px;
+    text-shadow: -1px 1px 1px black;
+}
+.content h1 span{
+    color: rgb(67 0 86);
+    text-shadow: 1px 1px 1px black;
+}
+#span2{
+    color: #ffc800;
+}
+.content p{
+    margin-left: 23px;
+}
+.btn{
+    margin-left: 13px;
+}
+.btn button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: rgb(67 0 86);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #ffc800;
+    color: black;
+    border: none;
+}
+@media screen and (max-width:1200px){
+    .home{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px){
+    .home{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px){
+    .home{
+        height: 110vh;
+    }
+}
+@media screen and (max-width:420px){
+   .content h1{
+    font-size: 45px;
+   }
+}
+@media screen and (max-width:320px){
+   .content h1{
+    font-size: 36px;
+   }
+}
+/* home content */
+
+
+
+
+
+
+
+
+/* product cards */
+#product-cards{
+    margin-top: 100px;
+}
+#product-cards h1{
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #ffc800;
+}
+#product-cards .card h3{
+    font-size: 20px;
+    color: black;
+}
+#product-cards .card p{
+    font-size: 12px;
+    margin-top: 5px;
+    color: black;
+}
+.star i{
+    margin-left: 5px;
+    font-size: 13px;
+}
+.checked{
+    color: #ffc800;
+}
+#product-cards .card h2{
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+#product-cards .card h2 span{
+    float: right;
+    color: black;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    #product-cards .card h3{
+        font-size: 15px;
+    }
+}
+/* product cards */
+
+
+
+
+
+
+
+
+/* other cards */
+#other-cards{
+    margin-top: 30px;
+}
+#other-cards .card{
+    background-color: #a9a9a92b;
+}
+#other-cards .card h3{
+    margin-top: 30px;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+#other-cards .card h5{
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid black;
+    width: 220px;
+}
+#other-cards .card p{
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+#shopnow{
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    #other-cards .card h3{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    #other-cards .card h5{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    #other-cards .card p{
+        margin-top: 0px;
+    }
+    #shopnow{
+        margin-top: 0px;
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+/* other cards */
+
+
+
+
+
+
+/* banner */
+.banner{
+    margin-top: 60px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #a9a9a92b;
+    z-index: 0;
+}
+.banner .img{
+    flex: 1 1 300px;
+}
+.banner .img img{
+    margin-top: 30px;
+    width: 100%;
+}
+.banner .content{
+    flex: 1 1 400px;
+    margin-top: 20px;
+}
+.banner .content h1{
+    color: rgb(67 0 86);
+    font-weight: bold;
+    margin-left: 23px;
+    font-size: 55px;
+    text-shadow: -1px 1px 1px black;
+}
+.banner .content h1 span{
+    color: rgb(67 0 86);
+    text-shadow: 1px 1px 1px black;
+}
+#span2{
+    color: #ffc800;
+}
+.banner .content p{
+    margin-left: 23px;
+}
+.btn{
+    margin-left: 13px;
+}
+.btn button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: rgb(67 0 86);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #ffc800;
+    color: black;
+    border: none;
+}
+@media screen and (max-width:1200px){
+    .banner{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px){
+    .banner{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px){
+    .banner{
+        height: 110vh;
+    }
+}
+@media screen and (max-width:420px){
+   .banner .content h1{
+    font-size: 45px;
+   }
+}
+@media screen and (max-width:320px){
+   .banner .content h1{
+    font-size: 36px;
+   }
+}
+/* banner */
+
+
+
+
+
+
+
+
+
+/* other cards */
+#other{
+    margin-top: 50px;
+}
+#other .card{
+    box-shadow: rgba(17,12,46, 0.15) 0px 48px 100px 0px;
+}
+#other .card h3{
+    margin-top: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#other .card p{
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+/* other cards */
+
+
+
+
+/* offer */
+#offer{
+    margin-top: 100px;
+}
+#offer i{
+    font-size: 32px;
+    color: black;
+}
+/* offer */
+
+
+
+
+/* newslater */
+#newslater{
+    margin-top: 100px;
+}
+#newslater h3{
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.input{
+    margin-top: 30px;
+}
+.input input{
+    width: 350px;
+    height: 36px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    border:  1px solid black;
+    padding-left: 5px;
+}
+#subscribe{
+    width: 200px;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffc800;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+}
+@media screen and (max-width:465px){
+    .input input{
+        width: 280px;
+    }
+    #subscribe{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:250px){
+    .input input{
+        width: 150px;
+    }
+    #subscribe{
+        width: 150px;
+    }
+}
+/* newslater */
+
+
+
+
+/* footer */
+#footer{
+    padding: 0 0 30px 0px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(67 0 86);
+    margin-top: 100px;
+}
+#footer .footer-top{
+    padding: 60px 0 30px 0;
+    background-color: rgb(67 0 86);
+    color: white;
+}
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+    color: #ffc800;
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: white;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#footer .footer-top .footer-links h4{
+    color: #ffc800;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li a:hover{
+    color: #ffc800;
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #373737;
+    color: white;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    transition: 0.5s ease;
+}
+#footer .footer-top .socail-links a:hover{
+    background-color: #ffc800;
+    color: white;
+}
+#footer .copyright{
+    text-align: center;
+    float: left;
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+    font-size: 13px;
+}
+#footer .credits a{
+    color: #ffc800;
+}
+/* footer */
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+
+
+/* login */
+#login{
+    width: 65%;
+    height: 70vh;
+    background-color: rgb(67 0 86);
+    margin-top: 35px;
+    border-radius: 10px;
+    box-shadow: rgba(17,12, 46, 0.15) 0px 48px 100px 0px;
+}
+#side1 h3{
+    color: #ffc800;
+    font-weight: bold;
+    margin-top: 200px;
+}
+#side2{
+    background-color: white;
+    height: 70vh;
+    border-radius: 10px;
+}
+#side2 h3{
+    margin-top: 30px;
+    color: #ffc800;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px black;
+}
+.input2 input{
+    margin-top: 15px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid #ffc800;
+}
+.input2 input ::placeholder{
+    font-weight: bold;
+}
+#btnlogin{
+    padding-top: 10px;
+}
+#btnlogin a{
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: #ffc800;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-shadow: 0px 0px 1px black;
+}
+#side2 p{
+    margin-top: 10px;
+}
+@media screen and (max-width:991px){
+    .input2 input{
+        width: 250px;
+    }
+}
+@media screen and (max-width:765px){
+    .input2 input{
+        width: 260px;
+    }
+    #side2{
+        height: 60vh;
+    }
+}
+/* login */
+
+
+
+
+/* about */
+#about{
+    margin-top: 30px;
+}
+#about h3{
+    font-weight: bold;
+    color: #ffc800;
+    text-shadow: 0px 1px 1px black;
+}
+#about button{
+    width: 150px;
+    height: 36px;
+    color: white;
+    background-color: rgb(67 0 86);
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* about */
+
+
+
+
+
+/* contact */
+#contact{
+    margin-top: 50px;
+}
+#contact .card{
+    height: 80px;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111 ,0.2) 0px 7px 29px 0px;
+}
+#contact .card i{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: rgb(67 0 86);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#contact .card h6{
+    margin-left: 10px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: rgb(67 0 86);
+}
+.messagebtn button{
+    margin-top: 30px;
+    width: 200px;
+    height: 33px;
+    background: transparent;
+    border: 2px solid rgb(67 0 86);
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.messagebtn button:hover{
+    background-color: rgb(67 0 86);
+    color: white;
+}
+/* contact */
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+  }
+  .slider img:not(:first-child) {
+    display: none;
+  }
+  
+</style>
+<body>
+
+    <!-- top navbar -->
+    <div class="top-navbar">
+        <p>WELCOME TO OUR SHOP</p>
+        <div class="icons">
+            <a href="login"><img src="./images/register.png" alt="" width="18px">Login</a>
+            <a href="register"><img src="./images/register.png" alt="" width="18px">Register</a>
+        </div>
+    </div>
+    <!-- top navbar -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><span id="span1">M</span>arkets <span>Shop</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                  <li><a class="dropdown-item" href="#">recharge cards</a></li>
+                  <li><a class="dropdown-item" href="#">Charcetrie</a></li>
+                  <li><a class="dropdown-item" href="#">Candies</a></li>
+                  <li><a class="dropdown-item" href="#">chocolate</a></li>
+                  <li><a class="dropdown-item" href="#">noodles</a></li>
+                 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    
+
+
+
+
+
+
+    
+    <!-- home content -->
+    <section class="home">
+    <div class="content">
+      <h1> <span> Groceries</span>
+        <br>
+        Up To <span id="span2">50%</span> Off
+      </h1>
+      <p>Order Now from all markets in sabtiyeh!
+        <br>
+      </p>
+      <div class="btn"><button onclick="location.href='#product-cards'">Shop Now</button></div>
+
+    </div>
+    <div class="img">
+      <img src="https://images.ctfassets.net/qr8kennq1pom/70R5rNivB9oP0RQi3KDzyk/7e77becb3897a1776b64c8c00519013e/Untitled_design__11_.png?fm=jpg&fl=progressive&q=70" alt="">
+    </div>
+  </section>
+    <!-- home content -->
+
+
+
+
+
+    
+    
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+      <h1 class="text-center">PRODUCTS</h1>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div id="productsContainer">
+            {{products}}
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://twentyfoursevenapi.weevi.com/content/uploads/ekomproducts/5284096318019.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Dr Food Wafer</h3>
+              <p class="text-center">Dr Food</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>23000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://cdnprod.mafretailproxy.com/sys-master-root/h6f/had/26514597085214/38951_main.jpg_480Wx480H" alt="">
+            <div class="card-body">
+              <h3 class="text-center">M&Ms</h3>
+              <p class="text-center">Chocolate</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>75000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://assets.haribo.com/image/upload/s--Vzy1rTEq--/ar_1475:2039,c_fill,f_auto,q_60/w_659/v1/consumer-sites/en-asia/Products/Packshot/Goldbears_80g_VS_8691216090439.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Haribo</h3>
+              <p class="text-center">Candy.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>40000L.L<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71ZHuJfZxRL.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Milka</h3>
+              <p class="text-center">Chocolate</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>75000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71ZHuJfZxRL.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center"> Nutella</h3>
+              <p class="text-center">Spread.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>250000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://i5.walmartimages.com/asr/2eab0f67-0308-46a5-bc5b-3ef79e3f8f17.03b75c30bf72f0054e05d7269be9d9ee.jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Peanut butter</h3>
+              <p class="text-center">Spread</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>300000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://d145dj1pf6foch.cloudfront.net/catalog/product/cache/dc1b602c7afcdb464abcc2496ba75b94/1/3/138815-v001-1.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Master chips</h3>
+              <p class="text-center">Vinegar.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>60000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    <!-- other cards -->
+    <div class="container" id="other-cards">
+      <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2022/02/04/supermarkets-and-groceries-in-dubai.jpg" alt="">
+            <div class="card-img-overlay">
+              <h3>Deals</h3>
+              <h5>EveryDay</h5>
+              <p></p>
+              <button id="shopnow">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="https://www.comparethemarket.com.au/wp-content/uploads/2021/08/Supermarkettips.jpg" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Deals</h3>
+              <h5>Latest Products</h5>
+              <p>Up To 20% Off</p>
+              <button id="shopnow">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+   
+
+
+
+
+
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="content">
+        <h1> <span>Groceries</span>
+          <br>
+          Up To <span id="span2">50%</span> Off
+        </h1>
+        <p>on first order
+          
+        </p>
+        <div class="btn"><button>Shop Now</button></div>
+  
+      </div>
+      <div class="img">
+        <img src="https://blog.lingoda.com/wp-content/uploads/2022/09/german-supermarkets-e1663600362996.jpg" alt="">
+      </div>
+    </section>
+    <!-- banner -->
+
+
+
+
+
+
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://clickomart.imgix.net//products/1600982325565_gallery_master-salt-65-g.jpg?auto=enhance,format&sharp=30&trim=auto&trim-sd=2}" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Master chips</h3>
+              <p class="text-center">Salt</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>60000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="http://cdn.shopify.com/s/files/1/0257/2645/1765/products/master-kettle-cooked-salt-vinegar-potato-chips.jpg?v=1601016315" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Kettle Cooked</h3>
+              <p class="text-center">Vinegar</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>70000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="http://cdn.shopify.com/s/files/1/0257/2645/1765/products/master-buffies-peanuts-potato-chips.jpg?v=1601016315" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Buffies</h3>
+              <p class="text-center">Peanut.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>50000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToFAKO52-xN2pQ5aTNP9L1WQ_DBcZHmNGN5A&usqp=CAU" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Master light</h3>
+              <p class="text-center">Salt.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>40000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- other cards -->
+    <div class="container" id="other">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <div class="card-img-overlay">
+              <h3>Chocolate</h3>
+              <p>All Barnds</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCz4yQvEttbfnB1dBt6Xf6FR5K6NXwPBjeavRiLr8&s" alt="">
+            <div class="card-img-overlay">
+              <h3>Chips</h3>
+              <p>all brands</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7z0iyUiVyPAE-B0G-zf63EmYOG2wyXn7VIsdtmYBtGg&s" alt="">
+            <div class="card-img-overlay">
+              <h3>Candies</h3>
+              <p>all brands</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx2Sk62Zu6DGV4wgzTGz8U2rQvJENNFBUYUA&usqp=CAU" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Master Hot</h3>
+              <p class="text-center">Chilli.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>30000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Gu95_w6dO8A3rErstn8tr9__LXFqObykrg&usqp=CAU" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Sitos</h3>
+              <p class="text-center">Cheese</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>70000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9AsPNQPQFIc5r7GVlejcLt83aP9dRvrHGwQ&usqp=CAU" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Kettle Cooked</h3>
+              <p class="text-center">Pepper.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>70000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZir8x-mWrOY2bJWx8cwqkRvYXtky_BzvMSw&usqp=CAU" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Curvy</h3>
+              <p class="text-center">Salt.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>60000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsUjWL5-jKQzb5gi3MPLoOELOpU5yNXdnmfQ&usqp=CAU" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Curvy Cheese</h3>
+              <p class="text-center">Cheesy</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>60000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://clickomart.imgix.net//files/1668756816137_image.png?auto=enhance,format&sharp=30&trim=auto&trim-sd=2" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Sausage Flavor</h3>
+              <p class="text-center">Master.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>60000L.L<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://cdnprod.mafretailproxy.com/sys-master-root/h73/h60/47404379045918/200Wx200H_401312_main.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Takis</h3>
+              <p class="text-center">Waves</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>100000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjUuQMsogX3fKBbzUdjuvyj6UqAkL9l06giHSYmPCJhA-bJX3VxyE4uBt975LSOetoSNM&usqp=CAU" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Sitos</h3>
+              <p class="text-center">Pepper.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>60000L.L <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    <!-- offer -->
+    <div class="container" id="offer">
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Free items</h3>
+          <p>On order over 200000L.L</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h3>Free Returns</h3>
+          <p></p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Fast Delivery</h3>
+          <p>On order over 200000L.L</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h3>Big choice</h3>
+          <p>Of products</p>
+        </div>
+      </div>
+    </div>
+    <!-- offer -->
+
+
+
+
+
+    
+    <!-- newslater -->
+    <div class="container" id="newslater">
+      <h3 class="text-center">Subscribe To The Groceries Shop For Latest upload.</h3>
+      <div class="input text-center">
+        <input type="text" placeholder="Enter Your Email..">
+        <button id="subscribe">SUBSCRIBE</button>
+      </div>
+    </div>
+    <!-- newslater -->
+
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Markets Shop</h3>
+              <p>
+               beirut <br>
+                Lebanon <br>
+                <br>
+              </p>
+              <strong>Phone:</strong> +000000000000000 <br>
+              <strong>Email:</strong> Marketsshop@.com <br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policey</a></li>
+             </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+
+             <ul>
+              <li><a href="#">groceries</a></li>
+              <li><a href="#">help</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">careers</a></li>
+              <li><a href="#">FAQ</a></li>
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Support us by following</p>
+
+              <div class="socail-links mt-3">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fas-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-solid fa-truck"></i></a>
+                <a href="#"><i class="fas-brands fa-linkedin"></i></a>
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Markets Shop</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">SA coding</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+   </body>
+</html>
